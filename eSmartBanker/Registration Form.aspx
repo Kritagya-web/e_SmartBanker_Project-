@@ -21,7 +21,7 @@
             //background-repeat:no-repeat;
            }
         a img{
-            width:33%;
+           width:187px;
         }
         nav.navbar{
             color:transparent;
@@ -44,14 +44,14 @@
         a:hover{
             font-weight:bold;
             color:yellow !important;
-            //border:3px solid yellow;
+           // border:3px solid yellow;
             border-radius:1px ;
         }
         
         table{
-            width:85%;
-            display:block;
-            margin:80px 210px;
+         width: 85%;
+    display: block;
+    margin: 78px 258px;
             //color:dimgrey;
         }
         .active{
@@ -80,6 +80,16 @@
         padding:8px;
         border-radius:6px;
     }
+    .navbar-brand{
+       width: 194px;
+    margin-right: 178px;
+    }
+    .button{
+        margin:0px 40px;
+
+        
+    }
+
     </style>
 </head>
 <body>
@@ -92,8 +102,11 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link text-white" href="#">Features</a>
-      <a class="nav-link text-white" href="#">Pricing</a>
+      <a class="nav-link text-white" href="#">About Us</a>
+      <a class="nav-link text-white" href="#">Our Policies</a>
+      <a class="nav-link text-white" href="#">Transactions</a>
+      <a class="nav-link text-white" href="#">Reach Us</a>
+      <a class="nav-link text-white" href="#">Queries & Suggestions</a>
      
     </div>
   </div>
@@ -163,17 +176,13 @@
             <td colspan="2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your Account No:<asp:TextBox ID="TextBox13" runat="server" class="greyBorder" Enabled="False" OnTextChanged="TextBox13_TextChanged"></asp:TextBox></td>
         </tr>
-        <tr>
-            <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" class="greyBorderButton"/>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" OnClick="Button1_Click" Text="Reset" class="greyBorderButton"/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button3" runat="server" OnClick="Button1_Click" Text="Cancel" class="greyBorderButton"/>
-            </td>
-            
-        </tr>
+       
     </table>
-
+        <div class="container d-flex m-auto align-items-center justify-content-center"  >
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" class="greyBorderButton button"/>
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" class="greyBorderButton button"/>
+            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Cancel" class="greyBorderButton button"/>
+        </div>
     </form>
     </body>
 </html>
