@@ -67,10 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Login Form.aspx" />
     <Content Include="Registration Form.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login Form.aspx.cs">
+      <DependentUpon>Login Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login Form.aspx.designer.cs">
+      <DependentUpon>Login Form.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration Form.aspx.cs">
       <DependentUpon>Registration Form.aspx</DependentUpon>

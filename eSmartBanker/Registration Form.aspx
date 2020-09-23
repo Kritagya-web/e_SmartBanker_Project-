@@ -4,21 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Registeration Page</title>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
      <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet"/>
     <style>
         *{
             padding:0;
             margin:0;
-            //background-color:grey;
-            //background-color:transparent;
-            //color:white;
+            
             font-size:15px;
             font-family: 'Baloo Bhai 2', cursive;
-            //background: rgba(0, 0, 0, 0.5) url("bg.jpg.jpg");
-            //background-size: cover;
-            //background-repeat:no-repeat;
+        
            }
         a img{
            width:187px;
@@ -30,22 +26,19 @@
             font-size:18px;
             margin: 0 10px;
         }
-       /*
-       .background {
-       */
+    
        body {
-            //background: rgba(0, 0, 0, 0.8) url("bg.jpg.jpg");
+           
             background-image: linear-gradient(to right, rgba(128, 128, 128,0.5),rgba(128, 128, 128,0.5)),url("bg.jpg.jpg")!important;
             background-size: cover;
             background-repeat:no-repeat;
-            //opacity:0.3;
+         
         }
 
         a:hover{
             font-weight:bold;
             color:yellow !important;
-           // border:3px solid yellow;
-            border-radius:1px ;
+           
         }
         
         table{
@@ -94,7 +87,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       <nav class="navbar navbar-expand-lg navbar-light background">
+       <nav class="navbar navbar-expand-lg navbar-light ">
   <a class="navbar-brand" href="#"><img src="logo.jpg" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -111,7 +104,7 @@
     </div>
   </div>
 </nav>
-        <div class="container text-center my-3 background">
+        <div class="container text-center my-3 ">
            <h2 draggable="true" class="active">Registration Form</h2>
             </div>
 
