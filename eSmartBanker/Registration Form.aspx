@@ -40,7 +40,11 @@
             color:yellow !important;
            
         }
-        
+        .form label{
+		display: inline-block;
+		text-align: right;
+		float: left;
+	    }
         table{
          width: 85%;
     display: block;
@@ -77,6 +81,9 @@
        width: 194px;
     margin-right: 178px;
     }
+    .fixed{
+        position:fixed;
+    }
     .button{
         margin:0px 40px;
 
@@ -104,11 +111,11 @@
     </div>
   </div>
 </nav>
-        <div class="container text-center my-3 ">
-           <h2 draggable="true" class="active">Registration Form</h2>
+        <div class="position-fixed">
+           <h2 class="active" >Registration Form</h2>
             </div>
 
-    <table>
+    <table class="align-self-md-auto">
         <tr>
             <td >Type of Account: </td>
             <td>
@@ -171,10 +178,15 @@
         </tr>
        
     </table>
-        <div class="container d-flex m-auto align-items-center justify-content-center"  >
+        <div class="container d-flex m-auto align-items-center justify-content-center" style="height: 80px"  >
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" class="greyBorderButton button"/>
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Reset" class="greyBorderButton button"/>
             <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Cancel" class="greyBorderButton button"/>
+        </div>
+            <div class="form">
+            <asp:Label ID="Label1" runat="server" Height="27px" Text="ASP.NET" ForeColor="White" ></asp:Label>
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Assignment project" ForeColor="White"></asp:Label>
         </div>
     </form>
     </body>
