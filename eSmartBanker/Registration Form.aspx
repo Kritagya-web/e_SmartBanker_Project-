@@ -26,15 +26,32 @@
             font-size:18px;
             margin: 0 10px;
         }
-    
-       body {
+    body:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-image: url('bg.jpg.jpg');
+    background-repeat: no-repeat;
+
+   /* -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;*/
+    background-size: cover;
+}
+   /*    body {
            
-            background-image: linear-gradient(to right, rgba(128, 128, 128,0.5),rgba(128, 128, 128,0.5)),url("bg.jpg.jpg")!important;
-            background-size: cover;
-            background-repeat:no-repeat;
+            background: url("bg.jpg.jpg") no-repeat center center fixed;
+       background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(223,234,33,0.4125000341933649) 0%, rgba(104,104,104,1) 0%, rgba(9,9,9,1) 51%, rgba(0,250,255,0) 100%);
          
         }
-
+       */
         a:hover{
             font-weight:bold;
             color:yellow !important;
@@ -110,7 +127,7 @@
 
     <table>
         <tr>
-            <td >Type of Account: </td>
+            <td >Type of Account: qq</td>
             <td>
                 <asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" Text="SB" GroupName="AccountType" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
