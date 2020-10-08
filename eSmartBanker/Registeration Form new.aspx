@@ -10,12 +10,12 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style type="text/css">
         *{
             padding:0;
             margin:0;
-            color:white;
+            color:black;
             font-size:15px;
             font-family: 'Baloo Bhai 2', cursive;
         
@@ -23,22 +23,43 @@
          a img{
            width:227px;
         }
- nav.navbar{
-            color:transparent;
+         
+.navbar{
+            background-color:black;
+            position:sticky;
         }
+.top{
+    position:fixed;
+}
         .nav-link{
-            font-size:18px;
-            margin: 0 10px;
+                font-size: 18px;
+    margin: 0px 23px;
+    color: white;
+    padding: 14px;
         }
         .navbar-nav{
-            margin-left:293px;
+            margin-left: 116px;
         }
-        a:hover{
+        .nav-link:hover{
             font-weight:bold;
-            color:yellow !important;
+          box-shadow:0px 0px 5px #33ffff,0px 0px 5px #66ffff;
+            border-radius:5px;
+            color:cyan;
            
         }
-        
+        i{
+            margin-right:8px;
+
+        }
+        .fa{
+            color:white;
+        }
+        .fa:hover{
+            color:cyan;
+        }
+     .landing{
+         margin-top:97px;
+     }
         .landing::before{
             content: ""; 
     position: fixed;
@@ -46,12 +67,21 @@
     left: 0;
     width: 100%;
     height: 100%;
-   background-image: url("1.png")!important;    
-    background-size: cover;
-    z-index:-1;
+/* background: rgb(231,238,140);
+background: linear-gradient(90deg, rgba(231,238,140,1) 
+0%, rgba(8,221,93,0.4125000341933649) 100%, rgba(9,9,9,1)
+100%, rgba(196,204,204,1) 100%, rgba(199,215,215,0) 100%);
+  */
+        background-image:url("bg.jpg.jpg");
+        background-size:100% 100%;
+z-index:-1;
 
 
 }
+        .main{
+  
+            background:white;
+        }
        
        
         tr{
@@ -66,7 +96,10 @@
     width: 317px;
     border-radius: 14px;
     text-align:center;
-    border:3px solid white;
+    border:3px solid black;
+        }
+        input:hover{
+            border-radius:24px;
         }
         .myButton {
 	box-shadow: 3px 4px 0px 0px #899599;
@@ -163,35 +196,36 @@ text-transform: capitalize;
 </head>
 <body>
     <form id="form1" runat="server">
-        <section class="top">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="top">
+            <nav class="navbar navbar-expand-lg stick">
   <a class="navbar-brand" href="#"><img src="logonewnew.png" /></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-link active " href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link " href="#">About Us</a>
-      <a class="nav-link " href="#">Our Policies</a>
-      <a class="nav-link " href="#">Transactions</a>
-      <a class="nav-link " href="#">Reach Us</a>
-      <a class="nav-link " href="#">Queries & Suggestions</a>
+      <a class="nav-link active " href="#"><i class="fa fa-home" aria-hidden="true" ></i>Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link " href="#"><i class="fa fa-users"></i>About Us</a>
+      <a class="nav-link " href="#"><i class="fa fa-book"></i>Our Policies</a>
+      <a class="nav-link " href="#"><i class="fa fa-exchange"></i>Transactions</a>
+      <a class="nav-link " href="#"><i class="fa fa-address-book"></i>Reach Us</a>
+      <a class="nav-link " href="#"><i class="fa fa-question-circle"></i>Queries & Suggestions</a>
      
     </div>
   </div>
 </nav>
-            </section>
+            </div>
         <br />
    <section class="landing">
-        <div class="container">
+        <div class="container main">
+            <br />
            <p class="h1 heading">Registeration Form</p> <br />
             <table class="table table-striped">
                 <tr>
                     <td class="text-center">First Name:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextFN" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextFN" Display="Dynamic" ErrorMessage="Please Enter First Name" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextFN" Display="Dynamic" ErrorMessage="Please Enter First Name" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -204,14 +238,14 @@ text-transform: capitalize;
                     <td class="text-center">Last Name:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextLN" runat="server" OnTextChanged="TextLN_TextChanged"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextLN" Display="Dynamic" ErrorMessage="Please Enter Last Name" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextLN" Display="Dynamic" ErrorMessage="Please Enter Last Name" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="text-center">DOB:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextDOB" runat="server" Type="date" OnTextChanged="TextLN_TextChanged"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TextDOB" Display="Dynamic" ErrorMessage="Please Enter DOB" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TextDOB" Display="Dynamic" ErrorMessage="Please Enter DOB" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -222,14 +256,14 @@ text-transform: capitalize;
                             <asp:ListItem>SB</asp:ListItem>
                             <asp:ListItem>Current</asp:ListItem>
                         </asp:RadioButtonList>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="RadioButtonList1" Display="Dynamic" ErrorMessage="Please Select any one type" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="RadioButtonList1" Display="Dynamic" ErrorMessage="Please Select any one type" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="text-center">Mobile Number:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextMob" runat="server" OnTextChanged="TextMob_TextChanged"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextMob" Display="Dynamic" ErrorMessage="Please Enter Mobile No." ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextMob" Display="Dynamic" ErrorMessage="Please Enter Mobile No." ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextMob" Display="Dynamic" ErrorMessage="Please enter valid Mobile No." Font-Bold="True" Font-Italic="False" Font-Size="Medium" ForeColor="#FF6600" SetFocusOnError="True" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
@@ -237,7 +271,7 @@ text-transform: capitalize;
                     <td class="text-center">Email Id:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextMail" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextMail" Display="Dynamic" ErrorMessage="Please Enter Email ID" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextMail" Display="Dynamic" ErrorMessage="Please Enter Email ID" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextMail" Display="Dynamic" ErrorMessage="Please enter valid Email" Font-Bold="True" Font-Italic="False" Font-Size="Medium" ForeColor="#FF6600" SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
@@ -245,7 +279,7 @@ text-transform: capitalize;
                     <td class="text-center">Aadhar No:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextAdc" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextAdc" Display="Dynamic" ErrorMessage="Please Enter Aadhar No" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextAdc" Display="Dynamic" ErrorMessage="Please Enter Aadhar No" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="TextAdc" Display="Dynamic" ErrorMessage="Please enter valid Aadhar No." Font-Bold="True" Font-Italic="False" Font-Size="Medium" ForeColor="#FF6600" SetFocusOnError="True" ValidationExpression="^\d{4}\d{4}\d{4}$"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
@@ -253,7 +287,7 @@ text-transform: capitalize;
                     <td class="text-center">PAN No:</td>
                     <td class="text-center" colspan="3">
                         <asp:TextBox ID="TextPan" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextPan" Display="Dynamic" ErrorMessage="Please Enter PAN" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextPan" Display="Dynamic" ErrorMessage="Please Enter PAN" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TextPan" Display="Dynamic" ErrorMessage="Please enter valid PAN" Font-Bold="True" Font-Italic="False" Font-Size="Medium" ForeColor="#FF6600" SetFocusOnError="True" ValidationExpression="(^([a-zA-Z]{5})([0-9]{4})([a-zA-Z]{1})$)"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
@@ -266,14 +300,14 @@ text-transform: capitalize;
                     <td class="text-center">
                         <asp:TextBox ID="TextPass" runat="server"></asp:TextBox>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextPass" Display="Dynamic" ErrorMessage="Please choose as per our poicy" ForeColor="#FF6600" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&amp;])[A-Za-z\d@$!%*?&amp;]{8,}$" Font-Bold="True" Font-Italic="False" Font-Size="Medium">Please choose as per our poicy</asp:RegularExpressionValidator>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextPass" Display="Dynamic" ErrorMessage="Please Enter Password" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextPass" Display="Dynamic" ErrorMessage="Please Enter Password" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="3" class="text-center">Confirm Password:</td>
                     <td class="text-center">
                         <asp:TextBox ID="TextCpass" runat="server" OnTextChanged="TextCpass_TextChanged"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextCpass" Display="Dynamic" ErrorMessage="Please Enter Confirm Password" ForeColor="Yellow" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextCpass" Display="Dynamic" ErrorMessage="Please Enter Confirm Password" ForeColor="Black" SetFocusOnError="True" ToolTip="This is required"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextPass" ControlToValidate="TextCpass" Display="Dynamic" ErrorMessage="Confirm Password &amp; Password should match" ForeColor="#FF6600" Font-Bold="True" Font-Italic="False" Font-Size="Medium"></asp:CompareValidator>
                     </td>
                 </tr>
