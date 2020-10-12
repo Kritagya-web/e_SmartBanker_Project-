@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,8 +68,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Bank.mdf" />
+    <Content Include="App_Data\Bank_log.ldf">
+      <DependentUpon>Bank.mdf</DependentUpon>
+    </Content>
+    <Content Include="bg.jpg.jpg" />
     <Content Include="Login Form.aspx" />
+    <Content Include="Loginformnewoct.aspx" />
     <Content Include="Registeration Form new.aspx" />
+    <Content Include="Registerationoct.aspx" />
     <Content Include="Registration Form.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -80,6 +88,13 @@
     <Compile Include="Login Form.aspx.designer.cs">
       <DependentUpon>Login Form.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Loginformnewoct.aspx.cs">
+      <DependentUpon>Loginformnewoct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginformnewoct.aspx.designer.cs">
+      <DependentUpon>Loginformnewoct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registeration Form new.aspx.cs">
       <DependentUpon>Registeration Form new.aspx</DependentUpon>
@@ -87,6 +102,13 @@
     </Compile>
     <Compile Include="Registeration Form new.aspx.designer.cs">
       <DependentUpon>Registeration Form new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerationoct.aspx.cs">
+      <DependentUpon>Registerationoct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerationoct.aspx.designer.cs">
+      <DependentUpon>Registerationoct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registration Form.aspx.cs">
       <DependentUpon>Registration Form.aspx</DependentUpon>

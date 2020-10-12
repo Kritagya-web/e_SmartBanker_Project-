@@ -175,3 +175,16 @@ D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\obj\Debug\eSmartBanke
 D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\obj\Debug\eSmartBanker.csproj.CopyComplete
 D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\obj\Debug\eSmartBanker.dll
 D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\obj\Debug\eSmartBanker.pdb
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\MySql.Data.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\Google.Protobuf.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\Zstandard.Net.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\K4os.Compression.LZ4.Streams.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\BouncyCastle.Crypto.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\Ubiety.Dns.Core.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\Renci.SshNet.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\System.Buffers.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\K4os.Compression.LZ4.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\K4os.Hash.xxHash.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\System.Memory.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\github esmartbanker\e_SmartBanker_Project-\eSmartBanker\bin\MySql.Data.xml
